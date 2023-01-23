@@ -59,11 +59,6 @@ Navigate to index.html file and opne it in your web browser
 
 <div align="center">
   <h3>Video Page</h3>
-  <img src="https://i.ibb.co/gDLLsZM/Screenshot-382.png" width="800">
-</div>
-
-<div align="center">
-  <h3>Video Page</h3>
   <img src="https://i.ibb.co/VCQzt7M/Screenshot-381.png" width="800">
 </div>
 
