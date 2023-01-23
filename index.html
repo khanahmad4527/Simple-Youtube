@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #202020;
+      }
+      .navbar {
+        color: white;
+      }
+      .navbar ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+      }
+      .navbar div {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        /* border: 1px solid red; */
+      }
+      .navbar li {
+        padding: 10px;
+      }
+      #search {
+        width: 100%;
+        background-color: black;
+        border: none;
+        padding: 10px;
+        color: white;
+      }
+      button {
+        background-color: transparent;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+      #card {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        color: white;
+        padding: 20px;
+        /* border: 1px solid red; */
+      }
+      #card img {
+        width: 100%;
+      }
+      #card p {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <div>
+          <li><i class="fa-solid fa-bars"></i></li>
+          <li><i class="fa-brands fa-youtube"></i>YouTube</li>
+        </div>
+        <div>
+          <li><input type="text" placeholder="Search" id="search" /></li>
+          <li>
+            <button onclick="searchData()">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </li>
+          <li><i class="fa-solid fa-microphone"></i></li>
+        </div>
+        <div>
+          <li><i class="fa-solid fa-video"></i></li>
+          <li><i class="fa-solid fa-bell"></i></li>
+          <li><i class="fa-solid fa-user"></i></li>
+        </div>
+      </ul>
+      <select id="sort" onchange="sort()">
+        <option value="">Sort by</option>
+        <option value="view">View</option>
+        <option value="alphabet">Alphabet</option>
+        <option value="rating">Popularity</option>
+      </select>
+    </div>
+    <div id="card"></div>
+  </body>
+</html>
+<script src="index.js"></script>
+<script
+  src="https://kit.fontawesome.com/24c494a6b6.js"
+  crossorigin="anonymous"
+></script>
